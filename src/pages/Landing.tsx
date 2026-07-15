@@ -71,33 +71,33 @@ export function Landing() {
 
         <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-14 pt-24 md:justify-center md:px-8 md:pb-20 md:pt-24">
           <motion.p
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0.85, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.55 }}
             className="font-display text-[clamp(2.75rem,8vw,5.5rem)] leading-[0.95] tracking-tight"
           >
             Longitude
           </motion.p>
           <motion.h1
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0.9, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.12 }}
+            transition={{ duration: 0.55, delay: 0.05 }}
             className="mt-5 max-w-xl font-display text-[clamp(1.35rem,3.2vw,2rem)] font-medium leading-snug text-white/95"
           >
             One Membership. Thousands of Miles. One Standard of Care.
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0.9, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.22 }}
+            transition={{ duration: 0.55, delay: 0.1 }}
             className="mt-4 max-w-md text-sm leading-relaxed text-white/75 sm:text-[0.95rem]"
           >
             The world&apos;s first membership designed for people who take longevity seriously.
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0.9, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.32 }}
+            transition={{ duration: 0.55, delay: 0.15 }}
             className="mt-7 flex flex-wrap gap-3"
           >
             <ScrollLink toId="waitlist" className="btn-brass">
