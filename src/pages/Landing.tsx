@@ -100,9 +100,9 @@ export function Landing() {
             transition={{ duration: 0.7, delay: 0.32 }}
             className="mt-9 flex flex-wrap gap-3"
           >
-            <a href="#waitlist" className="btn-brass">
+            <ScrollLink toId="waitlist" className="btn-brass">
               Join the Waitlist
-            </a>
+            </ScrollLink>
             <button type="button" onClick={handleBecomeMember} className="btn-secondary !border-white/25 !bg-white/10 !text-white hover:!bg-white/20">
               {isStripeConfigured() ? 'Become a Member' : 'Talk to Concierge'}
             </button>
@@ -422,9 +422,9 @@ export function Landing() {
             <Link to="/concierge" className="hover:text-white">
               Concierge ops
             </Link>
-            <a href="#waitlist" className="hover:text-white">
+            <ScrollLink toId="waitlist" className="hover:text-white">
               Waitlist
-            </a>
+            </ScrollLink>
           </div>
         </div>
       </footer>
