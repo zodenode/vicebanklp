@@ -2,7 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  height: 100%;
+:root {
+  --ink: #0b1c24;
+  --ink-soft: #1a3340;
+  --mist: #e7eef1;
+  --paper: #f3f7f8;
+  --meridian: #1f6f78;
+  --meridian-deep: #14545c;
+  --brass: #a8894e;
+  --brass-soft: #c4a96a;
+  --line: rgba(11, 28, 36, 0.12);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Sora", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(31, 111, 120, 0.22);
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.atmosphere {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(31, 111, 120, 0.18), transparent 55%),
+    radial-gradient(900px 500px at -10% 20%, rgba(168, 137, 78, 0.12), transparent 50%),
+    linear-gradient(180deg, #f7fafb 0%, #e7eef1 100%);
+}
+
+.meridian-grid {
+  background-image:
+    linear-gradient(rgba(11, 28, 36, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 28, 36, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium tracking-wide transition;
+  background: var(--ink);
+  color: #f7fafb;
+}
+
+.btn-primary:hover {
+  background: var(--meridian-deep);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium tracking-wide transition;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--ink);
+  backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.btn-brass {
+  @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium tracking-wide transition;
+  background: var(--brass);
+  color: #0b1c24;
+}
+
+.btn-brass:hover {
+  background: var(--brass-soft);
+}
+
+.input-field {
+  @apply w-full px-4 py-3 text-sm outline-none transition;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--ink);
+}
+
+.input-field:focus {
+  border-color: var(--meridian);
+  box-shadow: 0 0 0 3px rgba(31, 111, 120, 0.15);
+}
+
+.section-pad {
+  @apply px-5 py-20 md:px-8 md:py-28;
+}
