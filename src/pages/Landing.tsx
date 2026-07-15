@@ -69,12 +69,12 @@ export function Landing() {
 
         <SiteNav />
 
-        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 md:justify-center md:px-8 md:pb-24 md:pt-20">
+        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-14 pt-24 md:justify-center md:px-8 md:pb-20 md:pt-24">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="font-display text-5xl leading-none tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+            className="font-display text-[clamp(2.75rem,8vw,5.5rem)] leading-[0.95] tracking-tight"
           >
             Longitude
           </motion.p>
@@ -82,7 +82,7 @@ export function Landing() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.12 }}
-            className="mt-6 max-w-xl font-display text-2xl font-medium leading-snug text-white/95 sm:text-3xl md:text-[2.15rem]"
+            className="mt-5 max-w-xl font-display text-[clamp(1.35rem,3.2vw,2rem)] font-medium leading-snug text-white/95"
           >
             One Membership. Thousands of Miles. One Standard of Care.
           </motion.h1>
@@ -90,7 +90,7 @@ export function Landing() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.22 }}
-            className="mt-5 max-w-md text-sm leading-relaxed text-white/75 sm:text-base"
+            className="mt-4 max-w-md text-sm leading-relaxed text-white/75 sm:text-[0.95rem]"
           >
             The world&apos;s first membership designed for people who take longevity seriously.
           </motion.p>
@@ -98,7 +98,7 @@ export function Landing() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.32 }}
-            className="mt-9 flex flex-wrap gap-3"
+            className="mt-7 flex flex-wrap gap-3"
           >
             <ScrollLink toId="waitlist" className="btn-brass">
               Join the Waitlist
